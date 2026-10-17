@@ -1,37 +1,152 @@
 /* External CSS used only by registration.html */
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #151515; color: #e9e9e9; line-height: 1.6; }
-.site-header { background: #0b0b0b; padding: 28px 8%; border-bottom: 1px solid #444; }
-.site-header h1 { margin: 0 0 15px; color: #f1e9dc; }
-.site-header nav a { color: #bdb5a7; text-decoration: none; margin-right: 22px; }
-.site-header nav a:hover { color: #fff; }
-main { max-width: 850px; margin: auto; padding: 45px 8%; }
-.intro { margin-bottom: 28px; }
-.eyebrow { color: #b8a98d; text-transform: uppercase; letter-spacing: 3px; font-size: 13px; }
-.intro h2 { color: #f1e9dc; font-size: 34px; margin: 8px 0; }
-.intro p { color: #c6c6c6; }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #151515;
+  color: #e9e9e9;
+  line-height: 1.6;
+}
+.site-header {
+  background: #0b0b0b;
+  padding: 28px 8%;
+  border-bottom: 1px solid #444;
+}
+.site-header h1 {
+  margin: 0 0 15px;
+  color: #f1e9dc;
+}
+.site-header nav a {
+  color: #bdb5a7;
+  text-decoration: none;
+  margin-right: 22px;
+}
+.site-header nav a:hover {
+  color: #fff;
+}
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 45px 8%;
+}
+.intro {
+  margin-bottom: 28px;
+}
+.eyebrow {
+  color: #b8a98d;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+.intro h2 {
+  color: #f1e9dc;
+  font-size: 34px;
+  margin: 8px 0;
+}
+.intro p {
+  color: #c6c6c6;
+}
 
 /* ID selector: styles the required form */
-#registration-form { background: #1d1d1d; padding: 28px; border: 1px solid #3d3d3d; }
+#registration-form {
+  background: #1d1d1d;
+  padding: 28px;
+  border: 1px solid #3d3d3d;
+}
 
-fieldset { border: 1px solid #4a4a4a; padding: 22px; margin-bottom: 22px; }
-legend { color: #f1e9dc; padding: 0 8px; font-size: 19px; }
+fieldset {
+  border: 1px solid #4a4a4a;
+  padding: 22px;
+  margin-bottom: 22px;
+}
+legend {
+  color: #f1e9dc;
+  padding: 0 8px;
+  font-size: 19px;
+}
 
 /* Element selector: labels receive a visible effect */
-label { display: block; margin: 14px 0 7px; color: #d9d9d9; }
-.field-label { margin: 16px 0 5px; color: #d9d9d9; }
-.option { margin: 7px 0; }
+label {
+  display: block;
+  margin: 14px 0 7px;
+  color: #d9d9d9;
+}
+.field-label {
+  margin: 16px 0 5px;
+  color: #d9d9d9;
+}
+.option {
+  margin: 7px 0;
+}
 
-input, select, textarea { width: 100%; padding: 11px; border: 1px solid #555; border-radius: 3px; background: #111; color: #eee; font: inherit; }
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  background: #111;
+  color: #eee;
+  font: inherit;
+}
 
 /* Attribute selector: visibly styles email controls */
-input[type="email"] { border-left: 3px solid #b8a98d; }
-input[type="radio"], input[type="checkbox"] { width: auto; margin-right: 8px; }
+input[type="email"] {
+  border-left: 3px solid #b8a98d;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
 
 /* Class selector: adds visible styling to the buttons */
-.button-row { display: flex; gap: 12px; margin-top: 8px; }
-button { padding: 11px 22px; border: 1px solid #777; background: #302d29; color: #f1e9dc; cursor: pointer; font: inherit; }
-button:hover { background: #4a453e; }
-input:focus, select:focus, textarea:focus { outline: 2px solid #b8a98d; outline-offset: 2px; }
-footer { text-align: center; background: #0b0b0b; color: #999; padding: 20px; border-top: 1px solid #333; }
-@media (max-width: 600px) { .button-row { flex-direction: column; } button { width: 100%; } }
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+button {
+  padding: 11px 22px;
+  border: 1px solid #777;
+  background: #302d29;
+  color: #f1e9dc;
+  cursor: pointer;
+  font: inherit;
+}
+button:hover {
+  background: #4a453e;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #b8a98d;
+  outline-offset: 2px;
+}
+footer {
+  text-align: center;
+  background: #0b0b0b;
+  color: #999;
+  padding: 20px;
+  border-top: 1px solid #333;
+}
+@media (max-width: 600px) {
+  .button-row {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}
